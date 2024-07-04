@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Selection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.jpg" alt="Railway Reservation Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#booking">Book Ticket</a></li>
+                    <li><a href="index.html#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="meal-selection">
+            <div class="container">
+                <h2>Select Your Meals</h2>
+
+                <form id="meal-form" action="meal_confirmation.html" method="get">
+                    <div class="food-item">
+                        <img src="img/lunch_box.jpg" alt="Lunch Box">
+                        <div class="details">
+                            <h3>Lunch Box</h3>
+                            <p>₹250 each</p>
+                            <input type="number" id="lunch-box" name="lunch-box" value="0" min="0">
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <img src="img/dosa.webp" alt="Dosa">
+                        <div class="details">
+                            <h3>Dosa</h3>
+                            <p>₹50 each</p>
+                            <input type="number" id="dosa" name="dosa" value="0" min="0">
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <img src="img/idli.jpeg" alt="Idli">
+                        <div class="details">
+                            <h3>Idli</h3>
+                            <p>₹40 each</p>
+                            <input type="number" id="idli" name="idli" value="0" min="0">
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <img src="img/water_bottle.webp" alt="Water Bottle">
+                        <div class="details">
+                            <h3>Water Bottle</h3>
+                            <p>₹10 each</p>
+                            <input type="number" id="water-bottle" name="water-bottle" value="0" min="0">
+                        </div>
+                    </div>
+
+                    <input type="hidden" id="totalPrice" name="totalPrice" value="">
+
+                    <button type="submit">Confirm Meals</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Railway Reservation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const totalPrice = urlParams.get('totalPrice');
+
+            document.getElementById('totalPrice').value = totalPrice;
+        });
+    </script>
+</body>
+</html>

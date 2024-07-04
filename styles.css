@@ -1,0 +1,293 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container-h {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main{
+    padding: 2em;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: left;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+header {
+    background-color: #2c3e50;;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo {
+    display: flex;
+    align-items: center;
+}
+header .logo img {
+    height: 50px;
+    padding:10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content:end;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+nav ul li a:hover {
+    background-color: #34495e;
+}
+
+.hero {
+    /* background-color: red; */
+    background-image: url('img/railway.jpg') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    /* margin:2rem; */
+}
+.hero-text {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2em;
+    border-radius: 10px;
+    margin: 2rem;
+}
+
+.hero button {
+    padding: 15px 30px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hero button:hover {
+    background-color: #c0392b;
+}
+
+.about-us, .search-form, .contact-us, .confirmation {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+
+.about-us img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 15px 30px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #c0392b;
+}
+
+.ticket-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.ticket-options button {
+    padding: 12px 80px;
+    margin: 0 10px;
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.ticket-options button.active {
+    background-color: #0a3187;
+    color: #fff;
+}
+
+.ticket-options button:hover {
+    background-color: #0a3187;
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Update for food items and confirmation styles */
+.food-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.food-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.food-item .details {
+    flex: 1;
+}
+
+.food-summary {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.food-summary .food-item {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.confirmation p {
+    margin-top: 20px;
+}
+
+.confirmation button {
+    padding: 15px 30px;
+    background-color: #3a87ad;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.confirmation button:hover {
+    background-color: #286090;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Fade animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* Dot indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+@keyframes blink{
+0%{
+    opacity: 0;
+}
+100%{
+    opacity: 0.9;
+}
+}
+
+.blink{
+    animation: blink 1s infinite;
+}

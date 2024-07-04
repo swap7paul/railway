@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Confirmation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.jpg" alt="Railway Reservation Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#booking">Book Ticket</a></li>
+                    <li><a href="index.html#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="confirmation">
+            <div class="container">
+                <h2>Meal Confirmation</h2>
+                <p>Your meals have been successfully booked!</p>
+                <div id="food-summary" class="food-summary"></div>
+                <p><strong>Total Meal Price:</strong> ₹<span id="confirm-meal-price"></span></p>
+                <!-- <p><strong>Total Price (Including Meals):</strong> ₹<span id="confirm-total-price"></span></p> -->
+                <p>Thank you and have a safe journey!</p>
+                <button onclick="window.location.href='index.html'">Book Another Ticket</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Railway Reservation. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="meal_confirmation.js"></script>
+</body>
+</html>
